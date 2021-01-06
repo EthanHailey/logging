@@ -20,3 +20,8 @@ curl (required for running send-requests.sh)
 4. Navigate to Management -> Index Patterns -> app-*
 5. Click the refresh icon in the top right to refresh the field list
 6. Navigate to the "Discover" tab and run some queries
+
+## Making changes
+1. Add some new log messages or change things around
+2. Run `dotnet build` to make sure things compile.
+3. To rebuild the container images, just use `docker-compose up --build`.
