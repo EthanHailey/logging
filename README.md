@@ -1,7 +1,7 @@
 # Logging Demo
 
 ## Prerequisites
-docker
+docker  
 docker-compose
 
 ## Optional
