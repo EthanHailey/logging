@@ -10,7 +10,7 @@ do
         echo -n "Sending POST request @ "; date;
         curl --header "Content-Type: application/json" \
             --request POST \
-            --data '{"name": "Ethan Hailey"}' \
+            --data '{"name": "Automated User"}' \
             http://localhost:5000/test
 
     fi

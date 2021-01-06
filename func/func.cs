@@ -25,7 +25,7 @@ namespace func
         [FunctionName("func")]
         public static async Task Run([RabbitMQTrigger("demo-queue", ConnectionStringSetting = "RABBITMQ_CONNECTION_STRING")] QueueMessage payload, ILogger logger)
         {
-            logger.LogInformation("Processing queue message with traceId {TraceId}...", payload.Name, payload.TraceId);
+            logger.LogInformation("Processing queue message from {User} with traceId {TraceId}...", payload.Name, payload.TraceId);
 
             var timer = new Stopwatch();
             try
